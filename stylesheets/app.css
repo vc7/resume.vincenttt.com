@@ -15,7 +15,8 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 }
 
 .main li:before {
-	content: "- ";
+	content: "-";
+	margin-right: 10px;
 }
 
 .main li {
@@ -73,5 +74,10 @@ footer, .footer {
 	min-height:200px; 
 	background-color:#eee;
 	padding-top: 2em;
+	padding-bottom: 2em;
+	line-height: 3em;
+}
 
+footer .love, .footer .love {
+	color: tomato;
 }
