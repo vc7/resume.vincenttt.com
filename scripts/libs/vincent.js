@@ -49,7 +49,8 @@
 		// Use dummy data for now
 		return {
 			about: {
-				name: "About Me",
+				id: "about",
+				title: "About Me",
 				basic: {
 					year: 1989,
 					hp: 99,
@@ -75,7 +76,8 @@
 				]
 			},
 			skills: {
-				name: "Skills",
+				id: "skills",
+				title: "Skills",
 				languages: [ // Array
 					{
 						title: "JavaScript",
@@ -84,14 +86,14 @@
 					}
 
 				],
-
 			},
-			works: {
-				name: "Works"
-
+			career: {
+				id: "career",
+				title: "Career"
 			},
-			details: {
-				name: "Details",
+			education: {
+				id: "education",
+				title: "Education"
 			}
 		};
 	};
