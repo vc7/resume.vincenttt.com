@@ -1,6 +1,14 @@
 @import url('http://fonts.googleapis.com/css?family=Lilita+One');
 @import url('http://fonts.googleapis.com/css?family=Maven+Pro:400,900');
 
+::-moz-selection {
+   background-color: #e67e22;
+}
+
+::selection {
+   background-color: #e67e22;
+}
+
 body {
 	font-family:'Maven Pro';
 	padding-top: 50px;
@@ -26,6 +34,17 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 .jumbotron h1 {
 	font-size: 6em;
+}
+
+.jumbotron .btn-outline-inverse {
+	margin-top: 1em;
+	border: 1px solid white;
+	color: white;
+}
+
+.jumbotron .btn-outline-inverse:hover {
+	background-color: white;
+	color: #e67e22;
 }
 
 .main {
@@ -70,6 +89,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 .main .do .do-item h4 {
 	font-size: 2em;
+	color: #428bca;
 }
 
 .main .do .do-icon {
