@@ -4,14 +4,36 @@
 body {
 	font-family:'Maven Pro';
 	padding-top: 50px;
+	color: #454545;
 }
 
 h1, h2, h3, h4, h5, h6, .navbar-brand {
 	font-family:'Lilita One';font-weight:400
 }
 
+.navbar-inverse .navbar-brand {
+	color: #e67e22;
+}
+
+.navbar-inverse .navbar-brand:hover {
+	color: #ff7c09;
+}
+
+.jumbotron {
+	background-color: #e67e22;
+	color: white;
+}
+
+.jumbotron h1 {
+	font-size: 6em;
+}
+
 .main {
 	font-size: 1.3em;
+}
+
+.main h2 {
+	color: #e67e22;
 }
 
 .main li:before {
@@ -25,27 +47,32 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 	display: block;
 }
 
-.badge {
+.main .badge {
 	font-weight: 400;
 	background-color: #e9effa;
 	color: #a5a4d0;
 	border: 1px solid #c5d4f0;
 }
 
-.jumbotron {
-	background-color: #e67e22;
-	color: white;
+.main .about [class^="about-"]{
+	font-size: 1.5em;
+	font-family:'Lilita One';
+	font-weight: 900;
 }
 
-.jumbotron h1 {
-	font-size: 6em;
+.main .about .about-lv {
+	font-size: 2em;
 }
 
-.do .do-item {
+.main .do .do-item {
 	margin-bottom: 20px;
 }
 
-.do .do-icon {
+.main .do .do-item h4 {
+	font-size: 2em;
+}
+
+.main .do .do-icon {
 	font-size: 5em;
 }
 

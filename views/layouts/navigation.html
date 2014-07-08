@@ -1,20 +1,23 @@
-<div class="container">
-	<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		<a class="navbar-brand" href="#">Li-Hsuan Chen</a>
+<header class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			<a class="navbar-brand" href="#">Li-Hsuan Chen</a>
+		</div>
+		<nav class="navbar-collapse collapse">
+			<ul ng-include src="'views/layouts/navigation_links.html'" class="nav navbar-nav">
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://github.com/vc7" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+				<li><a href="https://twitter.com/vince78718" target="_blank"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="http://www.linkedin.com/in/vince7" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+				<li><a href="http://blog.kumaya.co"><i class="fa fa-bold"></i></a></li>
+			</ul>
+		</nav>
 	</div>
-	<nav class="navbar-collapse collapse">
-		<ul ng-include src="'views/layouts/navigation_links.html'" class="nav navbar-nav">
-		</ul>
-		<ul class="nav navbar-nav navbar-right">
-			<li><a href="https://github.com/vc7" target="_blank"><i class="fa fa-github-alt"></i></a></li>
-			<li><a href="https://twitter.com/vince78718" target="_blank"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="http://www.linkedin.com/in/vince7" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-		</ul>
-	</nav>
-</div>
+</header>

@@ -33,11 +33,9 @@
 	<body>
 		
 		<!-- Navbar ================================================== -->
-
-		<header ng-include src="'views/layouts/navigation.html'" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation"></header>
+		<ng-include src="'views/layouts/navigation.html'"></ng-include>
 
 		<!-- jumbotron ================================================== -->
-
 		<div class="jumbotron">
 			<div class="container">
 				<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
@@ -56,16 +54,14 @@
 		
 		<div class="container main">
 			<h2>About Me</h2>
-			<div class="container">
+			<div class="container about">
 				<div class="row">
 					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-center">
-						Lv. 26
+						<span class="about-lv">Lv. 26</span>
 					</div>
 					<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-							HP
-						</div>
-						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<span class="about-hp">HP</span>
 							<div class="progress">
 								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
 									<span class="sr-only">80% Complete</span>
@@ -74,10 +70,8 @@
 						</div>
 					</div>
 					<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-							MP
-						</div>
-						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<span class="about-mp">MP</span>
 							<div class="progress">
 								<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
 									<span class="sr-only">80% Complete</span>
@@ -99,7 +93,7 @@
 							<i class="fa fa-globe do-icon"></i>
 							<hr/>
 							<h4>Web</h4>
-							<p>I'm developing web systems using Javascript, PHP and MySQL on LAMP server. Familiar with MVC framwork, having some experience with Web API.</p>	
+							<p>I'm developing web systems using JavaScript, PHP and MySQL on LAMP server. Familiar with MVC framework.</p>	
 						</div>
 						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 do-item">
 							<i class="fa fa-mobile-phone do-icon"></i>
@@ -111,7 +105,7 @@
 							<i class="fa fa-shield do-icon"></i>
 							<hr/>
 							<h4>Play</h4>
-							<p>Not only digging into world of codes, I also playing music (violin and piano), Diablo III (Oh, yaaa!), riding bikes, watching movies and playing some games on Facebook and Mobile.</p>
+							<p>Not only digging into world of codes, I also playing music (violin and piano), Diablo III (Oh, yaaa!), riding bikes, watching movies and playing some games on Facebook and phone.</p>
 						</div>
 					</div>
 				</div>
@@ -127,7 +121,7 @@
 					<li>User experience design</li>
 				</ul>	
 				
-				<h3>Languages and Frameworks <small>order by familiarity</small></h3>
+				<h3>Languages and Frameworks <small>order by familiarity.</small></h3>
 				<ul>
 					<li>Objective-C
 						<small>
@@ -139,6 +133,8 @@
 					<li>HTML/CSS
 						<small>
 							<span class="badge">Bootstrap</span>
+							<span class="badge">Less</span>
+							<span class="badge">Sass</span>
 						</small>
 					</li>
 					<li>JavaScript 
@@ -158,7 +154,11 @@
 							<span class="badge">Rails</span>
 						</small>
 					</li>
-					<li>ASP.NET with C#</li>
+					<li>C#
+						<small>
+							<span class="badge">ASP.NET</span>
+						</small>
+					</li>
 					<li>Java</li>
 				</ul>
 				<h3>Tools <small>which enhancing my works.</small></h3>
@@ -170,8 +170,8 @@
 			<h2>Career</h2>
 			<div class="container">
 				<ul>
-					<li><span class="label label-default">2013-2014</span> <strong>Mobile Software Engineer</strong> <i>Efwuhn, Inc., Taiwan</i></li>
-					<li><span class="label label-default">2013</span> <strong>Chief Development Officer of iOS</strong> <i>Ans Global Corporation, Taiwan</i></li>
+					<li><span class="label label-primary">2013-2014</span> <strong>Mobile Software Engineer</strong> <i>Efwuhn, Inc., Taiwan</i></li>
+					<li><span class="label label-primary">2013</span> <strong>Chief Development Officer of iOS</strong> <i>Ans Global Corporation, Taiwan</i></li>
 				</ul>
 			</div>	
 
@@ -179,14 +179,14 @@
 			<div class="container">
 				<ul>
 					<li>
-						<span class="label label-default">2011-2012</span>
+						<span class="label label-primary">2011-2012</span>
 						<i> National Changhua University of Education, <small>Chanhua City, Taiwan</small></i>
 						<p>
 							Graduate Intitute of Information Management.
 						</p>
 					</li>
 					<li>
-						<span class="label label-default">2007-2011</span>
+						<span class="label label-primary">2007-2011</span>
 						<i> National Changhua University of Education, <small>Chanhua City, Taiwan</small></i>
 						<p>
 							<strong>Bachelor of Business Administration</strong>, Department of Information Management.
@@ -204,6 +204,7 @@
 					<li><a href="https://github.com/vc7" target="_blank">Github</a></li>
 					<li><a href="https://twitter.com/vince78718">Twitter</a></li>
 					<li><a href="http://www.linkedin.com/in/vince7">LinkedIn</a></li>
+					<li><a href="http://blog.kumaya.co">Blog</a></li>
 				</ul>
 			</div>
 		</div>
@@ -219,7 +220,7 @@
 				</p>
 				<p>
 					Built with <i class="fa fa-heart love"></i> of 
-					<a href="http://getbootstrap.com/" target="_blank">Bootstrap 3.1</a>, 
+					<a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>, 
 					<a href="http://jquery.com/" target="_blank">jQuery</a>,
 					<a href="http://angularjs.org/" target="_blank">AngularJS</a>,
 					<a href="http://www.google.com/fonts" target="_blank">Google Fonts</a>,
