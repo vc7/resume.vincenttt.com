@@ -1,3 +1,3 @@
 <li ng-repeat="item in rawData">
-	<a href="#{{ item.id }}">{{ item.title }}</a>
+	<a ng-click="scrollTo(item.id)">{{ item.title }}</a>
 </li>
