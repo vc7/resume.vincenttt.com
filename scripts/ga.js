@@ -13,7 +13,6 @@ _gaq.push(['_trackPageview']);
 (function() {
   var downloadButton = document.getElementById("resume_download");
   downloadButton.onclick = function() {
-  	_gaq.push(['_trackEvent', 'Resume', 'Downloaded', '']);
-  	alert("test");
+  	_gaq.push(['_trackEvent', 'Resume', 'Downloaded', 'Resume has been downloaded']);
   };
 })();
