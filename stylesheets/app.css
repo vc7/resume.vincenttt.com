@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 }
 
 .main {
-	font-size: 1.3em;
+	font-size: 1em;
 }
 
 .main h2 {
@@ -79,6 +79,13 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 	background-color: #e9effa;
 	color: #a5a4d0;
 	border: 1px solid #c5d4f0;
+}
+
+.main .about {
+	background-color: #f4f8fe;
+	border: 1px solid #e9effa;
+	border-radius: 4px;
+	padding: 20px;
 }
 
 .main .about [class^="about-"]{
