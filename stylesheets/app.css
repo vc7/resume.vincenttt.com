@@ -131,6 +131,10 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 	margin-left: 1.5em;
 }
 
+.resume_jp_download {
+	font-size: 0.7em;
+}
+
 footer, .footer {
 	margin-top: 0px;
 	min-height:200px; 
