@@ -15,4 +15,9 @@ _gaq.push(['_trackPageview']);
   downloadButton.onclick = function() {
   	_gaq.push(['_trackEvent', 'Resume', 'Downloaded', 'Resume has been downloaded']);
   };
+
+  var jaDownloadButton = document.getElementById("resume_ja_download");
+  jaDownloadButton.onclick = function() {
+    _gaq.push(['_trackEvent', 'Resume', 'Downloaded_JA', 'Japanese resume has been downloaded']);
+  };
 })();
